@@ -1,0 +1,39 @@
+@font-face {
+	font-family: "Montserrat-Hairline";
+	src: url('../media/fonts/Montserrat/Montserrat-Hairline.otf');
+}
+header {
+    background-color:black;
+    color:white;
+    font-family: "Montserrat-Hairline", Segoe UI, serif;
+    text-align:center;
+    padding:5px;
+}
+nav {
+	line-height:30px;
+	background-color:#eeeeee;
+	height:700px;
+	width:100px;
+	float:left;
+    font-family: "Segoe UI", Segoe, serif;
+    padding:5px;
+}
+article {
+    float:left;
+    height:700px;
+    font-family: "Segoe UI", Segoe, serif;
+    padding:10px; 
+}
+footer {
+    background-color:black;
+    color:white;
+    text-align:left;
+    clear:both;
+    float:bottom;
+    font-family: "Segoe UI", Segoe, serif;
+    padding:5px; 
+}
+a.side_links:link {color:black; text-decoration:none;}
+a.side_links:visited {color:black; text-decoration:none;}
+a.side_links:hover {color:purple;}
+a.side_links:active {color:black;}
