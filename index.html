@@ -1,42 +1,116 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title> Reyno Tilikaynen (WIP) </title>
-		<link rel="stylesheet" type="text/css" href="./css/MyStyle.css">
-	</head>
-	<body>
-		<header> 
-			<h1 style="font-size:300%"> Reyno's Site (Work In Progress)</h1> 
-		</header>
-		<nav>
-			<a class="side_links" href="http://www.google.com"> About Me<br></a></li>
-			<a class="side_links" href="http://www.google.com"> Posts<br></a>
-			<a class="side_links" href="http://www.google.com"> Projects<br></a>
-		</nav>
-		<article>
-			<h1> About Me </h1>
-			<p> 
-				Hi, my name is Reyno Tilikaynen. I'm currently studying Computer Science at the University of Waterloo. 
-				This is my personal site where I tinker with web design as well as potentially posting other things.
-			<p>
-			<img src="./media/images/temp.jpg" alt="Temp" style="width:480px;height:270px;">
-			<p id="adbnotice"> </p>
-			<script> var adblock = false; </script>
-			<script type="text/javascript" src="./js/advert.js"></script>
-			<script type="text/javascript">
-			if (!adblock){
-				document.getElementById("adbnotice").innerHTML = "Fun Fact: You have an ad blocker!";
-				//Insert other code here if wanted.
-			}
-			</script>
-		</article>
-		<footer>
-			<h56>Contact Info:</h4>
-			<address style="margin:2px">
-				Reyno Tilikaynen<br>
-				<a href="mailto:r.tilikaynen@gmail.com" style="color:white">r.tilikaynen@gmail.com</a><br>
-				(647)609-5305<br>
-			</address>
-	</body>
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/MyStyle.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="utf-8">
+    <title> Reyno Tilikaynen</title>   
+</head>
+<body>      
+    <nav class="navbar nav-style navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                </button>
+                <a class="navbar-brand" href="#">Reyno Tilikaynen</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#" style="border-left:1px solid #AAAAAA;">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+					<li class= "dropdown">
+                        <a href="./resume/index.html" class="dropdown-toggle" data-toggle="dropdown">
+                            Résumé <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu"> 
+                            <li class="nav-dropdown"> <a href="./resume/index.html"> Embedded </a></li> 
+                            <li class="nav-dropdown"> <a href="./media/downloads/ReynoTilikaynenResume.pdf" target="_blank"> Direct Link </a> </li> 
+                        </ul> 
+                    </li> 
+                    <li><a href="https://www.github.com/rtilikay">GitHub</a></li> 
+                </ul>
+            </div>
+        </div>        
+    </nav>
+    <div class="container-fluid bg1 text-center">
+        <h1> Reyno Tilikaynen </h1>
+        <img src="./media/images/Profile.jpg" class="img-circle" style="margin:50px;" width="300" height="300">
+        <p> Welcome to my personal website! </p>
+    </div>
+    <div class="container-fluid bg2 text-center">
+        <h1> About Me </h1>
+        <p><br></p>
+        <h4> I'm an 18 year old computer science student studying at the University of Waterloo. My favourite subjects are math, physics, and computer science, and my strength lies in competitive programming. Academics aside, I enjoy photography, working out, and hockey.</h4>
+    </div>
+    <div id="projects" class="container-fluid bg3 text-center">
+        <h1> Projects </h1>
+        <div class="row project-rows"> 
+            <div class="col-sm-6 text-left">
+                <h3> Fiora The Explorer </h3>
+            <h4> Fiora The Explorer is a Java game that I created with Jonah Haber in 2013 that is intended to help users learn French. The game has 3 levels, 3 difficulty modes, a practice mode and high scores. Furthermore, the game comes with help files, Java documentation, and a complete installer. </h4>
+                <p> <br> <p>
+                <div class="col-sm-1">
+                    <a href="./media/downloads/FioraTheExplorer.exe" download>
+                        <img src="https://maxcdn.icons8.com/windows8/PNG/64/Very_Basic/download-64.png" class="img-responsive"  title="Download" width="64">
+                    </a> 
+                </div>
+                <div class="col-sm-1">
+                    <a href="https://www.github.com/rtilikay/Fiora-The-Explorer.git">
+                        <img src="./media/images/GitHub.png" alt="GitHub" class="img-responsive">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <img src="./media/images/FioraTheExplorer.png" alt="Fiora The Explorer" class="img-responsive pull-right" width="640px" height="530px">  
+            </div>
+        </div>
+        <div class="row project-rows"> 
+            <div class="col-sm-6 text-left">
+                <h3> Differential Graphs </h3>
+                <h4> Differential Graphs is a Java program that I made in January 2015 to graph first-order differential equations. The program is capable of parsing inputted differential equations and graphs them using Euler's method. The program also has full Java documentation. </h4>
+                <p> <br> <p>
+                <div class="col-sm-1">
+                    <a href="./media/downloads/DifferentialGraphs.jar" download>
+                        <img src="https://maxcdn.icons8.com/windows8/PNG/64/Very_Basic/download-64.png" class="img-responsive"  title="Download" width="64">
+                    </a> 
+                </div>
+                <div class="col-sm-1">
+                    <a href="https://www.github.com/rtilikay/Differential-Graphs.git">
+                        <img src="./media/images/GitHub.png" alt="GitHub" class="img-responsive">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <img src="./media/images/DifferentialGraphs.png" alt="Differential Graphs" class="img-responsive pull-right" width="640px" height="480px">  
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg4 text-center">
+        <h4> Reyno Tilikaynen </h4>
+        <a href="mailto:r.tilikaynen@gmail.com" class="white-links"> r.tilikaynen@gmail.com </a>
+        <div class="row icon-links center-block">
+            <a href="https://www.facebook.com/reyno.tilikaynen"> <img src="./media/images/Facebook.png" class="img-responsive pull-left" width = 32px height = 32px> </a>
+            <a href="https://www.github.com/rtilikay"> <img src="./media/images/GitHubSmall.png" class="img-responsive pull-left" width = 32px height = 32px> </a>
+            <a href="https://ca.linkedin.com/in/reynotilikaynen"> <img src="./media/images/Linkedin.png" class="img-responsive pull-left" width = 41px height = 41px> </a>
+        </div>
+        <h4> Special Thanks </h4>
+        <p> bootstrap </p>
+        <p> w3schools </p>
+        <a href="https://icons8.com" class="white-links">Icon pack by Icons8</a>
+    </div>
+</body>
 </html>
+
+

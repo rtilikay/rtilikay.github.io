@@ -1,39 +1,101 @@
 @font-face {
-	font-family: "Montserrat-Hairline";
-	src: url('../media/fonts/Montserrat/Montserrat-Hairline.otf');
+	font-family:Montserrat-Light;
+	src: url('../media/fonts/Montserrat/Montserrat-Light.otf');
 }
-header {
-    background-color:black;
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav-dropdown {
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+.bg1{
+    background-color:#00B0F4;
     color:white;
-    font-family: "Montserrat-Hairline", Segoe UI, serif;
-    text-align:center;
-    padding:5px;
+    font-family: "Montserrat-Light", Segoe UI, serif;
+    font-size:2em;
+    padding-top:5%;
+    padding-bottom:5%;
 }
-nav {
-	line-height:30px;
-	background-color:#eeeeee;
-	height:700px;
-	width:100px;
-	float:left;
-    font-family: "Segoe UI", Segoe, serif;
-    padding:5px;
+
+.bg1 h1 {
+    font-size:3em;
 }
-article {
-    float:left;
-    height:700px;
-    font-family: "Segoe UI", Segoe, serif;
-    padding:10px; 
+
+.nav-style {
+    border:0;
+    border-radius: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    letter-spacing: 3px;
+    font-family: "Montserrat-Light", Segoe UI, serif;
+    font-size: 1.2em;
 }
-footer {
-    background-color:black;
+
+
+.bg2{
+    background-color:#004580;
     color:white;
-    text-align:left;
-    clear:both;
-    float:bottom;
-    font-family: "Segoe UI", Segoe, serif;
-    padding:5px; 
+    font-family: "Montserrat-Light", Segoe UI, serif;
+    padding-top:3%;
+    padding-bottom:5%;
+    line-height:150%;
 }
-a.side_links:link {color:black; text-decoration:none;}
-a.side_links:visited {color:black; text-decoration:none;}
-a.side_links:hover {color:purple;}
-a.side_links:active {color:black;}
+.bg2 h4 {
+    line-height:150%;
+}
+
+.bg3{
+    background-color:#F5FFE4;
+    color:#404040;
+    font-family: "Montserrat-Light", Segoe UI, serif;
+    padding-top:3%;
+    padding-bottom:5%;
+    line-height:150%;
+}
+.bg3 h4 {
+    line-height:150%;
+    color:#555555;
+}
+
+.project-rows {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.bg4{
+    background-color:#002240;
+    color:white;
+    font-family: "Montserrat-Light", Segoe UI, serif;
+    padding-top:2%;
+    padding-bottom:2%;
+    line-height:75%;
+}
+
+.icon-links {
+    max-width:120px;
+    padding-bottom:5px; 
+    padding-top:10px;
+    padding-left:10px;
+}
+
+.white-links{
+    color:white;
+    text-decoration:none;
+}
+
+.white-links:hover{
+    color:white;
+}
+
+.bg5{
+    background-color:white;
+    padding:0;
+}
+
