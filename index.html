@@ -112,13 +112,12 @@
 		<p> bootstrap </p>
 		<p> w3schools </p>
 		<a href="https://icons8.com" class="white-links">Icon pack by Icons8</a>
-		<h4 id="adbnotice"> </h4>   
+		<p id="adbnotice"></p>   
 		<script> var adblock = false; </script>
 		<script type="text/javascript" src="./js/advert.js"></script>
-		<script type="text/javascript"
-			if (!adblock){
-				document.getElementById("adbnotice").innerHTML = "<br> Fun Fact: You have an ad blocker!";
-			}
+		<script type="text/javascript">
+			if (!adblock)
+				document.getElementById("adbnotice").innerHTML = "<br> <br> Fun Fact: You have an ad blocker!";
 		</script>
 	</div>
 </body>
