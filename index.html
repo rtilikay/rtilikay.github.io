@@ -30,7 +30,8 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
                     <li><a href="#" style="border-left:1px solid #AAAAAA;">Home</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#About">About Me</a></li>
+                    <li><a href="#Projects">Projects</a></li>
 					<li class= "dropdown">
                         <a href="./resume/index.html" class="dropdown-toggle" data-toggle="dropdown">
                             Résumé <span class="caret"></span>
@@ -40,8 +41,8 @@
                             <li class="nav-dropdown"> <a href="./media/downloads/ReynoTilikaynenResume.pdf" target="_blank"> Direct Link </a> </li> 
                         </ul> 
                     </li> 
-                    <li><a href="https://ca.linkedin.com/in/reynotilikaynen">LinkedIn</a></li> 
-                    <li><a href="https://www.github.com/rtilikay">GitHub</a></li> 
+                    <li><a href="https://ca.linkedin.com/in/reynotilikaynen" target="_blank">LinkedIn</a></li> 
+                    <li><a href="https://www.github.com/rtilikay" target="_blank">GitHub</a></li> 
                 </ul>
             </div>
         </div>        
@@ -51,14 +52,14 @@
         <img src="./media/images/Profile.jpg" class="img-circle" width="300" height="300">
         <p> Welcome to my personal website! </p>
     </div>
-    <div class="container-fluid bg2 text-center">
-        <h1> About Me </h1>
+    <div id="About" class="container-fluid bg2 text-center">
+        <h1 class="about-header"> About Me </h1>
         <p><br></p>
-        <h4> I'm an 18 year old computer science student studying at the University of Waterloo. My favourite subjects are math, physics, and computer science, and my strength lies in competitive programming. Academics aside, I enjoy photography, working out, and hockey.</h4>
+        <h4> I'm an 18 year old computer science student studying at the University of Waterloo. My favourite subjects are math, physics, and computer science, and my strength lies in competitive programming. Academics aside, I enjoy photography, volunteering, and hockey, and I am proficient in French and Russian. </h4>
     </div>
-    <div id="projects" class="container-fluid bg3 text-center">
+    <div id="Projects" class="container-fluid bg3 text-center">
         <h1> Projects </h1>
-        <div class="row project-rows"> 
+        <div id="Fiora-The-Explorer" class="row project-rows"> 
             <div class="col-sm-6 text-left">
                 <h3> Fiora The Explorer </h3>
             <h4> Fiora The Explorer is a Java game that I created with Jonah Haber in 2013 that is intended to help users learn French. The game has 3 levels, 3 difficulty modes, a practice mode and high scores. Furthermore, the game comes with help files, Java documentation, and a complete installer. </h4>
@@ -78,7 +79,7 @@
                 <img src="./media/images/FioraTheExplorer.png" alt="Fiora The Explorer" class="img-responsive pull-right" width="640px" height="530px">  
             </div>
         </div>
-        <div class="row project-rows"> 
+        <div id="Differential-Graphs" class="row project-rows"> 
             <div class="col-sm-6 text-left">
                 <h3> Differential Graphs </h3>
                 <h4> Differential Graphs is a Java program that I made in January 2015 to graph first-order differential equations. The program is capable of parsing inputted differential equations and graphs them using Euler's method. The program also has full Java documentation. </h4>
@@ -107,11 +108,19 @@
             <a href="https://www.github.com/rtilikay"> <img src="./media/images/GitHubSmall.png" class="img-responsive pull-left" width = 32px height = 32px> </a>
             <a href="https://ca.linkedin.com/in/reynotilikaynen"> <img src="./media/images/Linkedin.png" class="img-responsive pull-left" width = 41px height = 41px> </a>
         </div>
-        <h4> Special Thanks </h4>
-        <p> bootstrap </p>
-        <p> w3schools </p>
-        <a href="https://icons8.com" class="white-links">Icon pack by Icons8</a>
-    </div>
+		<h4> Special Thanks </h4>
+		<p> bootstrap </p>
+		<p> w3schools </p>
+		<a href="https://icons8.com" class="white-links">Icon pack by Icons8</a>
+		<h4 id="adbnotice"> </h4>   
+		<script> var adblock = false; </script>
+		<script type="text/javascript" src="./js/advert.js"></script>
+		<script type="text/javascript"
+			if (!adblock){
+				document.getElementById("adbnotice").innerHTML = "<br> Fun Fact: You have an ad blocker!";
+			}
+		</script>
+	</div>
 </body>
 </html>
 
