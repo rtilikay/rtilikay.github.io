@@ -20,17 +20,20 @@ body {
     background-color:#00B0F4;
     color:white;
     font-family: "Montserrat-Light", Segoe UI, serif;
-    font-size:2em;
     padding-top:3%;
     padding-bottom:5%;
 }
 
 .bg1 h1 {
-    font-size:2em;
+    font-size:48px;
 }
 
 .bg1 img {
     margin: 50px 0px;
+}
+
+.bg1 p {
+    font-size:22px;
 }
 
 .nav-style {
@@ -51,8 +54,8 @@ body {
     font-family: "Montserrat-Light", Segoe UI, serif;
     padding-top:3%;
     padding-bottom:5%;
-    padding-left:5%;
-    padding-right:5%;
+    padding-left:15%;
+    padding-right:15%;
     line-height:150%;
 }
 .bg2 h4 {
@@ -60,7 +63,7 @@ body {
 }
 
 .about-header {
-    color:#B6EBFF;
+    color:white;
 }
 
 .bg3{
@@ -71,6 +74,7 @@ body {
     padding-bottom:5%;
     line-height:150%;
 }
+
 .bg3 h4 {
     line-height:150%;
     color:#555555;
